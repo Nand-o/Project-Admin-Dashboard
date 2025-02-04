@@ -7,7 +7,7 @@
     font-family: Roboto;
 }
 
-body {
+.wrapped {
     width: 100vw;
     height: 100vh;
     display: grid;
