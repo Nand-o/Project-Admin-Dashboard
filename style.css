@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.dashboard-container {
+    background-color: turquoise;
+}
+
+.all-content-container {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    background-color: black;
+}
+
+.header-content-container {
+    background-color: azure;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+    padding: 10px;
+}
+
+.top-header {
+    background-color: green;
+}
+
+.bottom-header {
+    background-color: darkgreen;
+}
+
+.main-content-container {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 25px 40px 15px;
+    gap: 15px;
+
+    & > * {
+        background-color: orange;
+    }
+}
+
+.project-container {
+    background-color: blue;
+    flex-grow: 0.7;
+}
+
+.side-content-container {
+    background-color: aquamarine;
+    flex-grow: 0.3;
+}
+
