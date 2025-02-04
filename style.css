@@ -15,8 +15,68 @@ body {
 }
 
 .dashboard-container {
-    background-color: turquoise;
+    background-color: #308bf3;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
+
+.svg-icons-header,
+.svg-icons {
+    filter: invert(1);
+}
+
+.svg-icons {
+    width: 2em;
+    height: 2em;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.dashboard-header {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    margin-bottom: 2.5em;
+
+    img {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .dashboard-text {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.main-icon,
+.second-icon {
+    padding: 8px;
+
+    & .icon-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.main-icon {
+    margin-bottom: 40px;
+}
+
 
 .all-content-container {
     display: grid;
